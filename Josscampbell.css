@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  overflow-x: hidden;
+ 
+}
+
+.navbar {
+    width: 100%;
+    background-color: #36486b ;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+.nav {
+    position: relative;
+    list-style: none;  
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+  flex-direction: row;
+}
+.nav li {    
+    margin: 0 auto;
+    border: none;
+    box-sizing: border-box;
+    display: inline;
+    line-height: 6rem;
+    text-transform:uppercase;
+}
+.nav li a {
+  padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: blanchedalmond;
+    box-sizing: border-box;
+  line-height: 6rem;
+}
+
+.nav li a:hover{
+    background-color: gray;
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        height: 10rem;
+        
+        width: 100%;
+    }
+
+    .nav {
+         top: 1rem;
+         display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+    }
+    .nav li {
+     padding: 3px;
+        line-height: 1rem;
+        margin-left: 0;
+        color: white;
+        
+
+    }
+    .nav li a {
+        line-height: 1rem;
+        padding: 1.5px;
+    }
+}
+
+/*why warm ups*/
+
+#why-warm-up {
+   position: relative;
+    height: 600px;
+    width: 100%;
+    top: 6rem;
+}
+
+.image {
+    background-image: url("./images/welcome\ img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 100%;
+    align-self: center;
+    justify-content: center;
+    border: none;
+    top: 6rem;
+}
+
+.text {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 80px;
+  font-style: normal;
+   position: absolute;
+   bottom: 200px;
+    width: 100%;
+    color: white;
+    text-align: left;
+    letter-spacing: 3px;
+    left: 10px;
+}
+
+.text-2 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+   position: absolute;
+   bottom: 220px;
+    width: 100%;
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+    left: 13px;
+
+}
+
+.info {
+    position: relative;
+    margin-top:6rem ;
+    padding: 2rem;
+    background-color: #36486b
+}
+
+@media screen and (max-width: 600px){
+    #why-warm-up {
+        height: 300px;
+        top: 9rem;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+    .info {
+        position: relative;
+        margin-top:10rem ;
+    }
+
+    .text {
+        bottom: 120px;
+    }
+    .text-2 {
+        bottom: 100px;
+    }
+}
+
+
+.info h1:after {
+        content: '';
+        border-top: 1px solid lightcoral;
+        width: 80%;
+        display: inline-block;
+        vertical-align: center;
+    }
+
+.info p {
+    font-size: large;
+}
+
+.info-box {
+    padding: 3rem;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.books {
+    padding-top: 2rem;
+    height: 300px;
+    width: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 600px){
+    .books {
+        height: 150px;
+        width: auto;
+    }
+}
+
+/* reviews */
+
+
+#reviews {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+
+}
+
+.review-title {
+   position: absolute;
+   left: 45%;
+}  
+
+.review-title h1 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #080808;
+        text-align:center;
+        text-transform:uppercase;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: solid 1px grey;
+    
+  }
+  
+.card {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+    width: 210px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+    margin: 3rem;
+    top: 3rem;
+    flex: 30%;
+  }
+
+  
+  
+  .card > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .card .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+  
+  .card .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card svg {
+    transition: 0.2s;
+  }
+
+
+  @media screen and (max-width: 600px){
+    #reviews{
+        flex-direction: column;
+        
+    }
+
+    .card {
+       width: auto;
+    }
+
+    .review-title {
+        position: absolute;
+        left: 30%;
+     }  
+  }
+  
+
+  /* Bio */
+
+  .bio {
+    display: flex;
+    flex-direction: row;
+    background-color: #36486b ;
+  }
+
+  .bio-name {
+    position: absolute;
+    padding: 3rem;
+    left: 10%;
+  }
+
+  .bio-image {
+    flex: 30%;
+    padding: 3rem;
+    height: 100%;
+    width: auto;
+    margin: 5rem;
+    border-radius: 50%;
+  }
+
+  .bio-text {
+    flex: 70%;
+    padding: 3rem;
+    color: white;
+
+  }
